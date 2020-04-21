@@ -273,20 +273,20 @@ namespace CursorOSI
         /// <summary>
         /// Create a 32x32 cursor from a bitmap, with the hot spot in the middle
         /// </summary>
-        public static Cursor CreateCursor(Bitmap bmp)
-        {
-            int xHotSpot = 16;
-            int yHotSpot = 16;
+        //public static Cursor CreateCursor(Bitmap bmp)
+        //{
+        //    int xHotSpot = 16;
+        //    int yHotSpot = 16;
 
-            IntPtr ptr = ((Bitmap)ResizeImage(bmp, 32, 32)).GetHicon();
-            IconInfo tmp = new IconInfo();
-            GetIconInfo(ptr, ref tmp);
-            tmp.xHotspot = xHotSpot;
-            tmp.yHotspot = yHotSpot;
-            tmp.fIcon = false;
-            ptr = CreateIconIndirect(ref tmp);
-            return new Cursor(ptr);
-        }
+        //    IntPtr ptr = ((Bitmap)ResizeImage(bmp, 32, 32)).GetHicon();
+        //    IconInfo tmp = new IconInfo();
+        //    GetIconInfo(ptr, ref tmp);
+        //    tmp.xHotspot = xHotSpot;
+        //    tmp.yHotspot = yHotSpot;
+        //    tmp.fIcon = false;
+        //    ptr = CreateIconIndirect(ref tmp);
+        //    return new Cursor(ptr);
+        //}
 
         #endregion
 
