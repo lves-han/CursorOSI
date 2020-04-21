@@ -17,18 +17,22 @@ namespace CursorOSI
 {
     public partial class MainForm : Form
     {
+        private DataTable imagesTable = new DataTable();
         public MainForm()
         {
             InitializeComponent();
         }
-        List<string> images = new List<string>();
+        private Dictionary<string, string> images = new Dictionary<string, string>();
         private void MainForm_Load(object sender, EventArgs e)
         {
+            imagesTable.Columns.Add("imageName", typeof(string));
+            imagesTable.Columns.Add("extension", typeof(string));
+            imagesTable.Columns.Add("fullPath", typeof(string));
             this.Icon = Resources.icon;
             this.notifyIcon1.Icon = Resources.icon;
             this.Show();
             Resources res = new Resources();
-            PropertyInfo[] peoperInfo = res.GetType().GetProperties(BindingFlags.Static |  BindingFlags.NonPublic | BindingFlags.Instance);
+            PropertyInfo[] peoperInfo = res.GetType().GetProperties(BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Instance);
 
             if (!Directory.Exists(Application.StartupPath + "\\img"))
             {
@@ -41,26 +45,29 @@ namespace CursorOSI
                         {
                             continue;
                         }
-                        images.Add(pro.Name);
+
+
+
                         Image img = (Image)Resources.ResourceManager.GetObject(pro.Name);
 
                         int height = 50;
                         int width = img.Width / (img.Height / 50);
 
-                        using (Bitmap iconBm = new Bitmap(img,height, width))
+                        using (Bitmap iconBm = new Bitmap(img, height, width))
                         {
                             //如果是windows调用，直接下面一行代码就可以了
                             //此代码不能在web程序中调用，会有安全异常抛出
                             using (Icon icon = ConvertToIcon(iconBm))
                             {
                                 string Name_ = Application.StartupPath + $"/img/{pro.Name}.cur";
+                                images.Add(pro.Name, Name_);
                                 using (Stream stream = new System.IO.FileStream(Name_, System.IO.FileMode.Create))
                                 {
                                     icon.Save(stream);
                                 }
                             }
                         }
-                        //img.Save(Application.StartupPath + $"/img/{pro.Name}.cur",ImageFormat.Icon);
+                        imagesTable.Rows.Add(new[] { pro.Name, "cur", Application.StartupPath + $"/img/{pro.Name}.cur" });
                     }
 
                 }
@@ -71,12 +78,13 @@ namespace CursorOSI
                 foreach (string file in files)
                 {
                     FileInfo info = new FileInfo(file);
-                    images.Add(info.Name.Replace(info.Extension,""));
+                    imagesTable.Rows.Add(new[] { info.Name.Replace(info.Extension, ""), info.Extension.Replace(".", ""), file });
+                    images.Add(info.Name.Replace(info.Extension, ""), file);
                 }
             }
 
-            
-            comboBox1.Items.AddRange(images.ToArray());
+            List<string> imgs = new List<string>(images.Keys);
+            comboBox1.Items.AddRange(imgs.ToArray());
         }
 
 
@@ -87,33 +95,88 @@ namespace CursorOSI
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
         {
-            if (images.Contains(comboBox1.Text))
+            if (images.ContainsKey(comboBox1.Text))
             {
-                pictureBox1.Image = Image.FromFile(Application.StartupPath + "\\img\\" + comboBox1.Text + ".cur");
+                pictureBox1.Image = Image.FromFile(images[comboBox1.Text]);
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!images.Contains(comboBox1.Text))
+            if (!images.ContainsKey(comboBox1.Text))
             {
                 return;
             }
             IntPtr iP = LoadCursorFromFile(Application.StartupPath + "\\img\\" + comboBox1.Text + ".cur");
             bool res = SetSystemCursor(iP, OCR_NORMAL);
-            MessageBox.Show(res.ToString());
-            button2.Enabled = false;
+            if (res)
+            {
+                MessageBox.Show("开启成功","成功",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("开启失败", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            button2.Enabled = true;
             SystemParametersInfo(SPI_SETCURSORS, 0, IntPtr.Zero, SPIF_SENDWININICHANGE);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            List<string> lists = new List<string>(images.Keys);
+            UserICON userIcon = new UserICON(lists);
+            userIcon.ShowDialog();
+            if (userIcon.Result.Count==0)
+            {
+                userIcon.Close();
+                userIcon.Dispose();
+                return;
+            }
+            
+            FileInfo info = new FileInfo(userIcon.Result[0]);
 
+            if (info.Extension.ToLower() == ".png")
+            {
+
+                Image img = Image.FromFile(userIcon.Result[0]);
+                int height = 50;
+                int width = img.Width / (img.Height / 50);
+
+                using (Bitmap iconBm = new Bitmap(img, height, width))
+                {
+                    //如果是windows调用，直接下面一行代码就可以了
+                    //此代码不能在web程序中调用，会有安全异常抛出
+                    using (Icon icon = ConvertToIcon(iconBm))
+                    {
+                        string Name_ = Application.StartupPath + $"/img/{userIcon.textBox1.Text}.cur";
+                        images.Add(userIcon.textBox1.Text, Name_);
+                        using (Stream stream = new System.IO.FileStream(Name_, System.IO.FileMode.Create))
+                        {
+                            icon.Save(stream);
+                        }
+                    }
+                }
+                imagesTable.Rows.Add(new[] { userIcon.textBox1.Text, "cur", Application.StartupPath + $"/img/{userIcon.textBox1.Text}.cur" });
+            }
+            else
+            {
+                File.Copy(userIcon.Result[0], Application.StartupPath + $"/img/{userIcon.textBox1.Text}{info.Extension}");
+                imagesTable.Rows.Add(new[] { userIcon.textBox1.Text, info.Extension.Replace(".", ""), Application.StartupPath + $"/img/{userIcon.textBox1.Text}{info.Extension}" });
+            }
+            imagesTable.WriteXml(Application.StartupPath + "\\ImageList.xml");
+            images.Clear();
+            foreach (DataRow dr in imagesTable.Rows)
+            {
+                images.Add(dr[0].ToString(), dr[1].ToString());
+            }
+            comboBox1.Items.Clear();
+            List<string> imgs = new List<string>(images.Keys);
+            comboBox1.Items.AddRange(imgs.ToArray());
+            userIcon.Close();
+            userIcon.Dispose();
         }
         [DllImport("user32")]
         private static extern IntPtr LoadCursorFromFile(string fileName);
@@ -175,6 +238,31 @@ namespace CursorOSI
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             SystemParametersInfo(SPI_SETCURSORS, 0, IntPtr.Zero, SPIF_SENDWININICHANGE);
+        }
+
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SystemParametersInfo(SPI_SETCURSORS, 0, IntPtr.Zero, SPIF_SENDWININICHANGE);
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void MainForm_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.notifyIcon1.Visible = false;
+            }
+
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.Hide();
+                this.notifyIcon1.Visible = true;
+            }
         }
     }
 }
