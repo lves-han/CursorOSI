@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EDD1630-4C10-4BA0-AC2F-AE08982808CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CursorOSI</RootNamespace>
+    <AssemblyName>CursorOSI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\tea 263.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserICON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserICON.Designer.cs">
+      <DependentUpon>UserICON.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserICON.resx">
+      <DependentUpon>UserICON.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\钻石.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\猪.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\指示牌.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蜘蛛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\照相机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\照片.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\长颈鹿.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\章鱼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\浴缸.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\雨伞.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鱼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\樱桃.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\饮料.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\钥匙.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\药剂_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\药剂.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\邀请函.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\羊驼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\眼镜蛇.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\眼镜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\眼睛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鸭子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\熊猫.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\性别.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\心碎.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\心_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\心_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\心.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\小蛋糕_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\小蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\消息.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\香水_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\香水.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\香槟_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\香槟_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\香槟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\犀牛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\乌龟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\吻.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\位置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\晚餐_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\晚餐_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\晚餐.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\外套.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鸵鸟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\拖鞋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\天气.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\天鹅.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鹈鹕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\套套.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\糖果.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\泰迪熊.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\锁定.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\锁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\松鼠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\睡衣.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\树獭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\书.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\手机_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\手机_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\手机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\视频文件.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食蚁兽.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\时钟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\狮子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\失恋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蛇.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鲨鱼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\热气球.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\热恋_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\热恋_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\热恋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\裙子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\情书_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\情书.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\情人节.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\情歌.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\青蛙.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\巧克力_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\巧克力.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\气球.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\企鹅.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\扑克.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\盆景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\螃蟹.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\派.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\女.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鸟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\内裤.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\男.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\奶牛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\目标.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绵阳.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\麋鹿.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\美食.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\玫瑰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\猫头鹰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\猫_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\猫.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\麦克风.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\骆驼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\铃铛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\礼物.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\老鼠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\老虎.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蜡烛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\咖啡_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\咖啡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\巨嘴鸟.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\酒杯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\镜子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鲸鱼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\金刚鹦鹉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\教堂.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\箭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\甲壳虫.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\家_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\家.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\婚戒_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\婚戒.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\徽章.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\皇冠_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\皇冠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\浣熊.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\花束.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\花.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蝴蝶结.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蝴蝶_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蝴蝶.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\猴子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\河马.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\海鳐鱼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\海牛.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\哈士奇.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\观赏球.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\挂锁_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\挂锁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\购物袋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\狗.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\公文包.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\公鸡.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\弓箭_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\弓箭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\高跟鞋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\干杯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\耳环.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鳄鱼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\对戒.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\短袖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\吊坠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\袋鼠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\大象.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\唇彩.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\床.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\窗帘.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\场记板.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\草莓.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\冰淇淋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\标签.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\变色龙.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蝙蝠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\杯子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\棒棒糖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白兔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爱.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soda-in-the-bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soda-in-a-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shrimp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shawarma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omelette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk-shake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mango.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lemon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kiwi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icecream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hot-peppers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hot-dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cucumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-in-a-disposable-cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea 263.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

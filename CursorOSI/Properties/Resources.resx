@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="beer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carrot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cheese.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cherry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cherry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coffee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coffee_in_a_disposable_cup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coffee-in-a-disposable-cup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\corn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cucumber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cucumber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart-9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hot_dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hot-dog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hot_peppers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hot-peppers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icecream_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ice_cream" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ice-cream.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tea 263.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kiwi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kiwi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lemon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lemon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mango" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mango.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\milk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="milk_shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\milk-shake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omelette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omelette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shawarma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shawarma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shrimp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shrimp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soda_in_a_glass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soda-in-a-glass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soda_in_the_bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soda-in-the-bank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wifi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wifi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="乌龟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\乌龟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="书" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\书.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="企鹅" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\企鹅.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="位置" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\位置.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="保存" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\保存.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公文包" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公文包.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公鸡" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公鸡.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="内裤" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\内裤.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="冰淇淋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\冰淇淋.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="变色龙" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\变色龙.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="吊坠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\吊坠.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="吻" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\吻.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="咖啡" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\咖啡.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="咖啡_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\咖啡_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="哈士奇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\哈士奇.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="唇彩" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\唇彩.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="场记板" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\场记板.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="外套" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\外套.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="大象" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\大象.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="天气" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\天气.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="天鹅" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\天鹅.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="失恋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\失恋.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="套套" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\套套.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="女" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\女.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="奶牛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\奶牛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="婚戒" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\婚戒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="婚戒_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\婚戒_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="家" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\家.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="家_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\家_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="对戒" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\对戒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="小蛋糕" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\小蛋糕.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="小蛋糕_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\小蛋糕_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巧克力" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\巧克力.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巧克力_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\巧克力_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="巨嘴鸟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\巨嘴鸟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="干杯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\干杯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="床" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\床.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="弓箭" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\弓箭.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="弓箭_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\弓箭_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="徽章" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\徽章.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="心" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\心.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="心_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\心_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="心_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\心_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="心碎" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\心碎.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="性别" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\性别.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="情书" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\情书.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="情书_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\情书_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="情人节" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\情人节.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="情歌" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\情歌.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="手机" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\手机.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="手机_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\手机_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="手机_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\手机_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="扑克" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\扑克.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="拖鞋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\拖鞋.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="挂锁" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\挂锁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="挂锁_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\挂锁_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="指示牌" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\指示牌.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="搜索" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\搜索.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="教堂" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\教堂.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="时钟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\时钟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="晚餐" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\晚餐.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="晚餐_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\晚餐_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="晚餐_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\晚餐_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="杯子" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\杯子.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="松鼠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\松鼠.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="标签" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\标签.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="树獭" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\树獭.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="棒棒糖" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\棒棒糖.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="樱桃" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\樱桃.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="气球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\气球.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="河马" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\河马.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="泰迪熊" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\泰迪熊.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="派" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\派.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="浣熊" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\浣熊.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="浴缸" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\浴缸.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="海牛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\海牛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="海鳐鱼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\海鳐鱼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="消息" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\消息.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="热恋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\热恋.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="热恋_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\热恋_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="热恋_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\热恋_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="热气球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\热气球.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="照片" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\照片.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="照相机" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\照相机.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="熊猫" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\熊猫.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="爱" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\爱.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="犀牛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\犀牛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="狗" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\狗.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="狮子" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\狮子.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="猪" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\猪.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="猫" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\猫.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="猫_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\猫_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="猫头鹰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\猫头鹰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="猴子" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\猴子.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="玫瑰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\玫瑰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="甲壳虫" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\甲壳虫.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="男" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\男.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="白兔" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\白兔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="皇冠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\皇冠.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="皇冠_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\皇冠_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="盆景" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\盆景.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="目标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\目标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="眼睛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\眼睛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="眼镜" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\眼镜.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="眼镜蛇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\眼镜蛇.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="睡衣" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\睡衣.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="短袖" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\短袖.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="礼物" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\礼物.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="窗帘" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\窗帘.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="章鱼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\章鱼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="箭" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\箭.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="糖果" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\糖果.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="绵阳" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\绵阳.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="羊驼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\羊驼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="美食" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\美食.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="老虎" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\老虎.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="老鼠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\老鼠.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="耳环" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\耳环.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="花" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\花.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="花束" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\花束.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="草莓" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\草莓.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="药剂" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\药剂.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="药剂_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\药剂_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蛇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\蛇.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蛋糕" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\蛋糕.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蜘蛛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\蜘蛛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蜡烛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\蜡烛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蝙蝠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\蝙蝠.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蝴蝶" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\蝴蝶.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蝴蝶_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\蝴蝶_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="蝴蝶结" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\蝴蝶结.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="螃蟹" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\螃蟹.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="袋鼠" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\袋鼠.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="裙子" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\裙子.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="观赏球" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\观赏球.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="视频文件" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\视频文件.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="购物袋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\购物袋.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="邀请函" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\邀请函.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="酒杯" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\酒杯.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="金刚鹦鹉" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\金刚鹦鹉.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="钥匙" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\钥匙.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="钻石" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\钻石.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="铃铛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\铃铛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="锁" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\锁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="锁定" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\锁定.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="镜子" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\镜子.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="长颈鹿" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\长颈鹿.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="雨伞" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\雨伞.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="青蛙" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\青蛙.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="食蚁兽" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\食蚁兽.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="饮料" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\饮料.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="香槟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\香槟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="香槟_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\香槟_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="香槟_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\香槟_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="香水" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\香水.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="香水_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\香水_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="骆驼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\骆驼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="高跟鞋" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\高跟鞋.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="鱼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\鱼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="鲨鱼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\鲨鱼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="鲸鱼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\鲸鱼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="鳄鱼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\鳄鱼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="鸟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\鸟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="鸭子" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\鸭子.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="鸵鸟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\鸵鸟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="鹈鹕" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\鹈鹕.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="麋鹿" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\麋鹿.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="麦克风" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\麦克风.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
