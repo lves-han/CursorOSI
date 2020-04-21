@@ -39,8 +39,8 @@ namespace CursorOSI
                     MessageBox.Show("当前文件名已存在，请修改文件名！","文件名已存在",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
                 pictureBox1.Image = Image.FromFile(fileDialog.FileName);
-                label1.Text = "宽度：50";
-                label2.Text = $"高度：{pictureBox1.Image.Height / (pictureBox1.Image.Width / 50)}";
+                label1.Text = "宽度：32";
+                label2.Text = $"高度：{pictureBox1.Image.Height / (pictureBox1.Image.Width / 32)}";
             }
         }
 
