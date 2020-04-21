@@ -106,7 +106,7 @@ namespace CursorOSI
             string filePath = images[comboBox1.Text];
             if (filePath.EndsWith(".png"))
             {
-                IntPtr iP = GetCursor(new Bitmap(filePath),32);
+                IntPtr iP = CreateCursor(new Bitmap(filePath));
                 //IntPtr iP = LoadCursorFromFile(@"C:\Users\chad.han\Downloads\Cartoon\Meevooooooon (1).cur");
                 bool res = SetSystemCursor(iP, OCR_NORMAL);
                 if (res)
@@ -273,20 +273,20 @@ namespace CursorOSI
         /// <summary>
         /// Create a 32x32 cursor from a bitmap, with the hot spot in the middle
         /// </summary>
-        //public static Cursor CreateCursor(Bitmap bmp)
-        //{
-        //    int xHotSpot = 16;
-        //    int yHotSpot = 16;
+        public static IntPtr CreateCursor(Bitmap bmp)
+        {
+            int xHotSpot = 0;
+            int yHotSpot = 0;
 
-        //    IntPtr ptr = ((Bitmap)ResizeImage(bmp, 32, 32)).GetHicon();
-        //    IconInfo tmp = new IconInfo();
-        //    GetIconInfo(ptr, ref tmp);
-        //    tmp.xHotspot = xHotSpot;
-        //    tmp.yHotspot = yHotSpot;
-        //    tmp.fIcon = false;
-        //    ptr = CreateIconIndirect(ref tmp);
-        //    return new Cursor(ptr);
-        //}
+            IntPtr ptr = (new Bitmap(bmp, 32, 32)).GetHicon();
+            IconInfo tmp = new IconInfo();
+            GetIconInfo(ptr, ref tmp);
+            tmp.xHotspot = xHotSpot;
+            tmp.yHotspot = yHotSpot;
+            tmp.fIcon = false;
+            ptr = CreateIconIndirect(ref tmp);
+            return new Cursor(ptr).Handle;
+        }
 
         #endregion
 
