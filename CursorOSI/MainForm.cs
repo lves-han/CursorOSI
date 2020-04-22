@@ -237,7 +237,7 @@ namespace CursorOSI
         }
 
 
-        #region 还未测试
+        #region 图片转图标，并设定图标焦点
 
         public struct IconInfo
         {
